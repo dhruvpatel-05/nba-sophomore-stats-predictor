@@ -137,7 +137,6 @@ sophomore_data
 
 sophomore_years
 
-# prompt: generate a list for rookie ppg for each player
 
 rookie_ppg = unique_rookies_data.groupby('PLAYER')['PTS'].mean().reset_index()
 rookie_ppg
