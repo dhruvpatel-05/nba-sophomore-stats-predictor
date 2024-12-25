@@ -1,4 +1,4 @@
-# nba-stats-predictor
+# nba-sophomore-stats-predictor
 Goal: predict the sophomore season statistics of the 2023-2024 ROTY finalists: Victor Wembanyama, Chet Holmgren, and Brandon Miller. In the process, we have examined and visualized data of rookie and sophomore players from the 2018-19 to the 2023-24 NBA seasons.
 
 Methodology and conclusions are more thoroughly explained in the article: https://www.bruinsportsanalytics.com/post/sophomore-slump-nba
