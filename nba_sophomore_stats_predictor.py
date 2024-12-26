@@ -49,7 +49,6 @@ for i in range(len(years) - 1):
   # Concatenate this dataframe with the main one
   df = pd.concat([df, dft], ignore_index=True)
 
-df
 
 # Create a dataframe of 2023-24 NBA Rookies
 api_url_2023_24 = f'https://stats.nba.com/stats/leagueLeaders?LeagueID=00&PerMode=PerGame&Scope=Rookies&Season=2023-24&SeasonType=Regular%20Season&StatCategory=PTS'
@@ -57,7 +56,6 @@ r = requests.get(url=api_url_2023_24).json()
 df_rookie2023 = pd.DataFrame(r['resultSet']['rowSet'], columns=table_head)
 df_rookie2023 = df_rookie2023[df_rookie2023['GP'] >= 45]
 df_rookie2023 = df_rookie2023.drop(columns=['RANK', 'PLAYER_ID', 'TEAM_ID','FGM','FGA','FG3M','FG3A','FTM','FTA','OREB', 'DREB', 'GP', 'TEAM'])
-df_rookie2023
 
 # Assuming rookie_ppg and sophomore_ppg are pandas DataFrame objects
 rookie_ppg = df['PTS_x'].to_numpy()
